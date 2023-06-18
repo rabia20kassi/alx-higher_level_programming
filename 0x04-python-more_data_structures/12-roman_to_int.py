@@ -5,11 +5,12 @@ def roman_to_int(roman_string):
     prev = 0
     sum = 0
 
+    if not isinstance(roman_string, str) or roman_string is None:
+        return 0
     for char in roman_string:
         if thisdict[char] <= prev:
             sum += thisdict[char]
         else:
             sum += thisdict[char] - prev * 2
         prev = thisdict[char]
-
     return sum
