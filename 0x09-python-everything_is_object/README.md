@@ -1,4 +1,4 @@
-# Python - Everything is 
+# Python - Everything is object
 
 ## General
 
